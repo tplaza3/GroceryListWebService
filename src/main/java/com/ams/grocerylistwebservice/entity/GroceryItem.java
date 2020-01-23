@@ -14,15 +14,15 @@ public class GroceryItem {
     private String id;
     private String name;
     private int amount;
-    private boolean isDone;
+    private boolean done;
 
     public GroceryItem() { }
 
-    public GroceryItem(String id, String name, int amount, boolean isDone) {
+    public GroceryItem(String id, String name, int amount, boolean done) {
         this.id = id;
         this.name = name;
         this.amount = amount;
-        this.isDone = isDone;
+        this.done = done;
     }
 
     public String getId() {
@@ -50,11 +50,11 @@ public class GroceryItem {
     }
 
     public boolean isDone() {
-        return isDone;
+        return done;
     }
 
     public void setDone(boolean done) {
-        isDone = done;
+        this.done = done;
     }
 
     @Override
@@ -63,7 +63,7 @@ public class GroceryItem {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", amount=" + amount +
-                ", isDone=" + isDone +
+                ", done =" + done +
                 '}';
     }
 }
